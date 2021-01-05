@@ -11,3 +11,6 @@ Archivo > Opciones > Complementos > Administrar Complementos
 
 Aquí hay que marcar "Herramientas para análisis" y darle aceptar!
 
+Ver video aquí: https://www.loom.com/share/f303ec82ea2f45a79acb89c6646dfab9
+
+
