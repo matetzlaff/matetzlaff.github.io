@@ -1,40 +1,16 @@
 ---
 layout: post
-title: "Derivación de prefijos para lógica de negocio"
+title: "Estadísticas descriptivas para entender el negocio"
 date: 2021-01-05
 ---
-A veces, al crear la lógica de negocios, se da alguna identificación por el prefijo de un número, pero tenemos que extraer ese prefijo con SQL.
+Las estadísticas descriptivas son el primer paso para explorar sus datos con el fin de obtener comprensión empresarial.
 
-Aunque aquí nos referimos a los prefijos de forma computacional, la definición gramatical tiene sentido: un prefijo es un afijo colocado antes de una palabra, base u otro prefijo para modificar el significado de un término.
+Se puede utilizar el complemento Analysis Toolpak para generar estadísticas descriptivas!
 
-Hay dos (y posiblemente muchas más formas) de extraer el prefijo que queremos.
+Archivo > Opciones > Complementos > Administrar Complementos
 
-Por ejemplo, si queremos recuperar todos los números de teléfono internacionales que son argentinos, necesitamos recuperar aquellos números que comienzan con "54".
+Aquí hay que marcar "Herramientas para análisis" y darle aceptar!
 
-1. Operador SQL LIKE
+Ver video aquí:
 
-Por ejemplo:
-
-SELECT numero_telefono
-, nombre
-FROM xyz_numeros
-WHERE numero_telefono LIKE '54%'
-
-Hay dos comodines que se utilizan a menudo junto con el operador LIKE:
-%: El signo de porcentaje representa cero, uno o varios caracteres
-_ - El guión bajo representa un solo carácter
-
-En este caso, usamos el % porque vienen varios digitos en un número, no uno solo.
-
-2. Función SUBSTRING ()
-
-Por ejemplo:
-
-SELECT numero_telefono
-, nombre
-FROM xyz_numeros
-WHERE substring(numero_telefono,1,2) = '54'
-
-Personalmente, me gusta la función SUBSTRING () , ya que me recuerda que lo que estoy buscando es un prefijo, ya que los prefijos son substring en sí.
-
-¡Eso es todo!
+https://www.loom.com/share/f303ec82ea2f45a79acb89c6646dfab9
