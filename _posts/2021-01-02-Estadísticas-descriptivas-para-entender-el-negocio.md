@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Estadísticas descriptivas para entender el negocio"
-date: 2021-01-05
+date: 2021-01-02
 ---
 Las estadísticas descriptivas son el primer paso para explorar sus datos con el fin de obtener comprensión empresarial.
 
